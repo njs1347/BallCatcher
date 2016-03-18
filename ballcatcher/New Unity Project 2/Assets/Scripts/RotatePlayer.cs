@@ -1,0 +1,24 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class RotatePlayer : MonoBehaviour {
+
+	float speed = 50f;
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		float moveAmount = speed * Time.deltaTime;
+		if (Input.GetKey (KeyCode.LeftArrow)) {
+			transform.Rotate(0,0,moveAmount);
+		}
+
+		if (Input.GetKey (KeyCode.RightArrow)) {
+			transform.Rotate(0,0,-moveAmount);
+		}
+		
+	}
+}
