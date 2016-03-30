@@ -24,4 +24,7 @@ public class ResetObject : MonoBehaviour {
 		transform.Rotate (0,0,Random.Range(0,360));
 		mover.lookAtPlayer ();
 	}
+
+
+	//collision code here
 }
