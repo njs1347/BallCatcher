@@ -3,25 +3,30 @@ using System.Collections;
 
 public class ScoreKeeper : MonoBehaviour {
 
-	public float score = 0;
+	public GUIText scoreText;
+	public int score;
 	// Use this for initialization
 	void Start () {
-	
+		UpdateScore ();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void UpdateScore () {
+		scoreText.text = "Score: " + score;
 	}
-	void increaseScore (){
+
+	public void increaseScore (){
 		score++;
+		UpdateScore ();
 	}
-	void decreaseScore (){
+
+	public void decreaseScore (){
 		score--;
 
 		if (score < 0) {
 			score = 0;
 		}
+		UpdateScore ();
 	}
 
 }

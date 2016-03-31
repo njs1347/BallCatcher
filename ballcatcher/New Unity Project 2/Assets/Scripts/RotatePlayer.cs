@@ -4,9 +4,10 @@ using System.Collections;
 public class RotatePlayer : MonoBehaviour {
 
 	float speed = 200f;
+
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
@@ -21,4 +22,6 @@ public class RotatePlayer : MonoBehaviour {
 		}
 		
 	}
+
+
 }

@@ -1,9 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ResetObject.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ObjectMover.cs">
     <Files>
-      <File FileName="Assets\Scripts\ObjectMover.cs" Line="21" Column="3" />
-      <File FileName="Assets\Scripts\ResetObject.cs" Line="31" Column="1" />
+      <File FileName="Assets\Scripts\ObjectMover.cs" Line="7" Column="1" />
+      <File FileName="Assets\Scripts\ScoreKeeper.cs" Line="33" Column="1" />
+      <File FileName="Assets\Scripts\RotatePlayer.cs" Line="10" Column="3" />
+      <File FileName="Assets\Scripts\decreaseScore.cs" Line="17" Column="4" />
+      <File FileName="Assets\Scripts\increaseScore.cs" Line="19" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
