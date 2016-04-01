@@ -12,10 +12,10 @@ public class decreaseScore : MonoBehaviour {
 			scoreKeeper = scoreKeeperObject.GetComponent <ScoreKeeper> ();
 		}
 	}
-	void OnColllisionrEnter (Collision col){
+	void OnCollisionEnter (Collision col){
 		if (col.gameObject.tag == "Ball") {
 	//		scoreKeeper.decreaseScore ();
-			Destroy (gameObject);
+			Destroy (col.gameObject);
 		}
 	}
 }

@@ -14,10 +14,10 @@ public class increaseScore : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void OnColllisionrEnter (Collision col){
+	void OnCollisionEnter (Collision col){
 		if (col.gameObject.tag == "Ball") {
 			//scoreKeeper.increaseScore();
-			Destroy (gameObject);
+			Destroy (col.gameObject);
 		}
 	}
 }
