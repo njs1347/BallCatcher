@@ -13,18 +13,13 @@ public class ResetObject : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Time.time > x) {
-			callReset ();
-			x += 5;
-		}
+	
 	}
-	void callReset()
+	public void callReset()
 	{
 		mover.reset ();
 		transform.Rotate (0,0,Random.Range(0,360));
 		mover.lookAtPlayer ();
 	}
-
-
 	//collision code here
 }
