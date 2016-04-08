@@ -27,14 +27,14 @@ public class CollisionScript : MonoBehaviour {
 		{
 			resetScript.callReset ();
 			print("increase");
-			scoreKeeperScript.increaseScore ();
+			scoreKeeperScript.decreaseScore ();
 		}
 		
 		if(col.gameObject.tag == "Box")
 		{
 			resetScript.callReset ();
 			print("decrease");
-			scoreKeeperScript.decreaseScore ();
+			scoreKeeperScript.increaseScore ();
 		}
 	}
 
