@@ -4,6 +4,8 @@ using System.Collections;
 public class RotatePlayer : MonoBehaviour {
 
 	float speed = 200f;
+	public GameObject scrollRect;
+
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +22,7 @@ public class RotatePlayer : MonoBehaviour {
 		if (Input.GetKey (KeyCode.RightArrow)) {
 			transform.Rotate(0,-moveAmount,0);
 		}
+		scrollRect.GetComponent ();
 		
 	}
 

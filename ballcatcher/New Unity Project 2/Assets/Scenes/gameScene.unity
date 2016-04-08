@@ -205,6 +205,118 @@ MonoBehaviour:
   resetScript: {fileID: 0}
   scoreKeeper: {fileID: 2051034599}
   scoreKeeperScript: {fileID: 0}
+--- !u!1 &117926902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 117926907}
+  - 33: {fileID: 117926906}
+  - 65: {fileID: 117926905}
+  - 23: {fileID: 117926904}
+  - 114: {fileID: 117926903}
+  m_Layer: 0
+  m_Name: scrollRect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &117926903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117926902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1367256648, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 0}
+  m_Horizontal: 1
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!23 &117926904
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117926902}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &117926905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117926902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &117926906
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117926902}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!224 &117926907
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117926902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -1.57}
+  m_SizeDelta: {x: 10, y: 10}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &279085708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1956,6 +2068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childObject: {fileID: 42835873}
   parentObject: {fileID: 824756634}
+  particleSystem: {fileID: 385613901}
 --- !u!23 &454693750
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2084,6 +2197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3e9971112fa55b4ea309cc01bb73317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scrollRect: {fileID: 117926902}
 --- !u!1 &1084627188
 GameObject:
   m_ObjectHideFlags: 0
@@ -2240,7 +2354,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: 535afc2eda63a9841af55c5ed48cc744, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 535afc2eda63a9841af55c5ed48cc744, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2252,19 +2366,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 535afc2eda63a9841af55c5ed48cc744, type: 3}
       propertyPath: m_LocalRotation.x
-      value: .500000119
+      value: 0.5000001
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 535afc2eda63a9841af55c5ed48cc744, type: 3}
       propertyPath: m_LocalRotation.y
-      value: .5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 535afc2eda63a9841af55c5ed48cc744, type: 3}
       propertyPath: m_LocalRotation.z
-      value: .5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 535afc2eda63a9841af55c5ed48cc744, type: 3}
       propertyPath: m_LocalRotation.w
-      value: .49999994
+      value: 0.49999994
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 535afc2eda63a9841af55c5ed48cc744, type: 3}
       propertyPath: m_RootOrder
@@ -2293,6 +2407,18 @@ Prefab:
     - target: {fileID: 100004, guid: 535afc2eda63a9841af55c5ed48cc744, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 535afc2eda63a9841af55c5ed48cc744, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 535afc2eda63a9841af55c5ed48cc744, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 535afc2eda63a9841af55c5ed48cc744, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 535afc2eda63a9841af55c5ed48cc744, type: 3}
