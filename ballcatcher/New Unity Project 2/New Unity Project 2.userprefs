@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ResetObject.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ScoreKeeper.cs">
     <Files>
+      <File FileName="Assets\Scripts\ScoreKeeper.cs" Line="14" Column="23" />
+      <File FileName="Assets\Scripts\CollisionScript.cs" Line="36" Column="13" />
       <File FileName="Assets\Scripts\DestroyBall.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ResetObject.cs" Line="17" Column="2" />
+      <File FileName="Assets\Scripts\ResetObject.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ObjectMover.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\RotatePlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ScoreKeeper.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CollisionScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

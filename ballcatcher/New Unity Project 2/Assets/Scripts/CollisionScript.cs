@@ -26,15 +26,15 @@ public class CollisionScript : MonoBehaviour {
 		if(col.gameObject.tag == "Sides")
 		{
 			resetScript.callReset ();
-			print("decrease");
-			//scoreKeeperScript.decreaseScore();
+			print("increase");
+			scoreKeeperScript.increaseScore ();
 		}
 		
 		if(col.gameObject.tag == "Box")
 		{
 			resetScript.callReset ();
-			print("increase");
-			//scoreKeeperScript.increaseScore();
+			print("decrease");
+			scoreKeeperScript.decreaseScore ();
 		}
 	}
 
