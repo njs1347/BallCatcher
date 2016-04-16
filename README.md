@@ -7,7 +7,7 @@ The goal of the game is to get the tiny balls the spawn into the circle by using
 Controls: 
 To rotate player - Left and Right arrows
 
-# Team members
-Nyrih Smith
-Joe Kramer
-Zach Shuffield
+## Team members
+* Nyrih Smith
+* Joe Kramer
+* Zach Shuffield
